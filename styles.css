@@ -17,7 +17,7 @@ html { font-size: 62.5%;
     background-size: contain;
 }
 section{
-    background-image:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.40129555240064774) 200%), url(img/33879.jpg);
+    background-image:linear-gradient(90deg, rgba(2,0,36,.8) 0%, rgba(0,0,0,0.40129555240064774) 200%), url(img/toronto-1298016_1920.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -139,11 +139,16 @@ height: 50vh;
 }
 .servicios{
     margin-bottom: 4rem;
+    font-size: 6rem;
+    margin-top: 4rem;
 }
 
 article{
     height: 100vh;
 
+}
+.anycolor{
+    background-color: red !important;
 }
 
  path {
@@ -195,3 +200,168 @@ color: #fff;
 li a{
     font-size: 1.5rem;
 }
+.image{
+    width: 100%;
+    height: 500px;
+
+    background-position: center;
+
+    background-size: cover;
+
+
+    background-image: url(img/businessman-sitting-with-creative-illustration.jpg);
+ position: relative;
+
+    position: relative;
+    
+}.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background:  #111111 ;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: .7;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+.image2{
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+background-position: center;
+    background-size: cover;
+
+    background-image: url(img/laptop-online-shopping-teapot-cookies-flower-decor-concept.jpg);
+    position: relative;
+}
+.image3{
+    width: 100%;
+    height: 500px;
+
+    background-position: center;
+    background-size: cover;
+
+    background-image: url(img/close-up-image-of-programer-working-at-his-desk-in-office.jpg);
+    position: relative;
+    }
+    .image4{
+        width: 100%;
+        height: 500px;
+        background-position: center;
+    
+        background-size: cover;
+    
+        background-image: url(img/close-up-of-notebook-with-colored-drawings.jpg);
+        position: relative;
+        }
+        .image5{
+            background-image: url(img/diverse-people-thinking-planning-marketing-brand-concept.jpg);
+            width: 100%;
+            height: 500px;
+            background-position: center;
+        
+            background-size: cover;
+             position: relative;
+            }
+
+
+article{
+  height: 200vh;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #111111;;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #111111;;
+}
+.box:hover .overlay {
+    opacity: .7;
+
+
+  }
+  .box2:hover .overlay2 {
+    opacity: .7;
+
+
+
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .bg-dark{
+      background: transparent !important;
+      transition: 0.5s ease-in-out;
+  }
+  .bg-dark.scrolled{
+      background: #d991b3 !important;
+  }
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
